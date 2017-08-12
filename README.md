@@ -1,24 +1,18 @@
-# README
+# An awesome readme
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a sample app to test our stack for GraphQL.
 
-Things you may want to cover:
+After cloning the project run:
 
-* Ruby version
+```
+bundle install
+rails server
+```
 
-* System dependencies
+You can use GraphiQL navigating to `localhost:3000/graphiql`, however you need to provide a JWT token to use it.
 
-* Configuration
+Use postman to create a user with this endpoint `POST http://localhost:3000/signup`, then add an environment variable to the .env file like this:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+GRAPHIQL_TOKEN=YOUR_JWT
+```
